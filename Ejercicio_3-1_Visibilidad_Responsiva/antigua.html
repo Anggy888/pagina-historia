@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Antigua</title>
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-image: url('/img/fondo.jfif'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card {
+            height: 100%; /* Asegura que las tarjetas tengan la misma altura */
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card img {
+            max-height: 150px; /* Controla la altura de la imagen */
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 0;
+        }
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Historia Antigua</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Historia Medieval</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="moderna.html">Historia Moderna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contemporanea.html">Historia Contemporánea</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2>Las Civilizaciones Antiguas</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/img/descarga2.jfif" class="card-img-top" alt="Civilización Egipcia">
+                    <div class="card-body">
+                        <h5 class="card-title">Civilización Egipcia</h5>
+                        <p class="card-text">Desarrollada a lo largo del río Nilo, es conocida por sus pirámides, templos y rica mitología.</p>
+                        <a href="https://www.nationalgeographic.es/video/tv/el-antiguo-egipto-101#:~:text=La%20antigua%20civilizaci%C3%B3n%20egipcia%20se,el%20actual%20Sud%C3%A1n%20al%20sur." class="btn btn-primary mt-auto">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/descarga3.jfif" class="card-img-top" alt="Civilización Griega">
+                    <div class="card-body">
+                        <h5 class="card-title">Civilización Griega</h5>
+                        <p class="card-text">Cuna de grandes pensadores, conocida por su arte, arquitectura y contribuciones a la democracia.</p>
+                        <a href="https://humanidades.com/civilizacion-griega/" class="btn btn-primary mt-auto">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/descarga4.jfif" class="card-img-top" alt="Civilización Romana">
+                    <div class="card-body">
+                        <h5 class="card-title">Civilización Romana</h5>
+                        <p class="card-text">Famosa por su expansión, impacto en la ley, la política, y su arquitectura monumental.</p>
+                        <a href="https://historia.nationalgeographic.com.es/temas/antigua-roma" class="btn btn-primary mt-auto">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Historia del Mundo</p>
+        <p class="mb-0">Desarrollado por [Anggy Ospina]</p>
+
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

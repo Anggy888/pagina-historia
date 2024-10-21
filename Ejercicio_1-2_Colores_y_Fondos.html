@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1.2: Colores y Fondos</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img/fondo3.jfif'); /* Cambia esta URL por la imagen que desees */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Color blanco para resaltar el texto sobre el fondo */
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+        .bg-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido para mayor contraste */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para hacer que la caja resalte */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5 bg-container">
+        <h1>Taller 1.2: Colores y Fondos en Historia</h1>
+
+        <!-- Div 1: text-primary con bg-light -->
+        <div class="p-3 mb-3 text-primary bg-light bg-opacity-75">
+            La Revolución Industrial, que comenzó a fines del siglo XVIII, transformó la economía de Europa.
+        </div>
+
+        <!-- Div 2: text-danger con bg-dark -->
+        <div class="p-3 mb-3 text-danger bg-dark bg-opacity-75">
+            La Segunda Guerra Mundial (1939-1945) fue el conflicto más devastador del siglo XX, involucrando a la mayoría de las naciones del mundo.
+        </div>
+
+        <!-- Div 3: text-success con bg-warning -->
+        <div class="p-3 mb-3 text-success bg-warning bg-opacity-75">
+            La independencia de América Latina a principios del siglo XIX fue un proceso histórico clave en la creación de las naciones actuales.
+        </div>
+
+        <!-- Div 4: text-white con bg-primary -->
+        <div class="p-3 mb-3 text-white bg-primary bg-opacity-75">
+            La caída del Imperio Romano de Occidente en el 476 marcó el fin de la Antigüedad y el inicio de la Edad Media.
+        </div>
+
+        <!-- Div 5: text-dark con bg-info -->
+        <div class="p-3 mb-3 text-dark bg-info bg-opacity-75">
+            La Guerra Fría, una lucha de poder entre Estados Unidos y la Unión Soviética, definió gran parte de la política mundial en la segunda mitad del siglo XX.
+        </div>
+
+        <!-- Div 6: text-warning con bg-secondary -->
+        <div class="p-3 mb-3 text-warning bg-secondary bg-opacity-75">
+            La Revolución Mexicana de 1910 fue un conflicto que transformó profundamente la política y la sociedad de México.
+        </div>
+    </div>
+
+    <!-- Enlace a Bootstrap JS (opcional si necesitas interacción) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

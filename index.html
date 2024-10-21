@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Historia</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('img/fon1-1.jfif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .hero {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #f8f9fa;
+        }
+
+        footer {
+            border-top: 2px solid #f8f9fa;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .footer-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        .navbar-brand img {
+            filter: invert(1);
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .list-group-item {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        .list-group-item:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/fon1.jfif" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Proyecto de Historia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca_de.html">Acerca de</a></li>
+                </ul>
+                <a href="contactanos.html" class="btn btn-primary d-none d-md-block">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="text-uppercase">Explora los Grandes Momentos de la Historia</h1>
+            <p>Desde las antiguas civilizaciones hasta los eventos que forjaron el mundo moderno. Únete a nosotros en un viaje por el tiempo.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Temas del Proyecto -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Temas Clave de la Historia</h2>
+        <div class="list-group">
+            <a href="/Ejercicio _1-1_Formateo_de_Texto.html" class="list-group-item list-group-item-action">Formateo de Texto</a>
+            <a href="/Ejercicio_1-2_Colores_y_Fondos.html" class="list-group-item list-group-item-action">Colores y Fondos</a>
+            <a href="/Ejercicio_2-1_Control_de_Espaciado.html" class="list-group-item list-group-item-action">Control de Espaciado</a>
+            <a href="/Ejercicio_2-2_Bordes_y_Estilos.html" class="list-group-item list-group-item-action">Bordes y Estilos</a>
+            <a href="/Ejercicio_3-1_Visibilidad_Responsiva/index.html" class="list-group-item list-group-item-action">Visibilidad Responsiva</a>
+            <a href="/Ejercicio_3-2_Layout_con_Flexbox/index.html" class="list-group-item list-group-item-action">Layout con Flexbox</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Características del Proyecto</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-book-fill"></i>
+                        </div>
+                        <h5 class="card-title">Educativo</h5>
+                        <p class="card-text">Este proyecto ofrece una fuente rica de información sobre los eventos que moldearon nuestra civilización.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-laptop-fill"></i>
+                        </div>
+                        <h5 class="card-title">Accesibilidad</h5>
+                        <p class="card-text">Totalmente accesible en cualquier dispositivo, desde teléfonos móviles hasta pantallas grandes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h5 class="card-title">Conectividad Global</h5>
+                        <p class="card-text">Una herramienta para conectar con la historia mundial desde cualquier parte del mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4">
+        <div class="footer-text">
+            <p>&copy; 2024 Proyecto de Historia. Todos los derechos reservados.</p>
+            <p class="mb-0">Desarrollado por [Anggy Ospina]</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

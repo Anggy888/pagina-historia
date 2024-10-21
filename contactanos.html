@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('img/fon1-1.jfif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .hero {
+            background-color: rgba(0, 123, 255, 0.8); /* Fondo color primario con transparencia */
+            color: white;
+            padding: 50px 0;
+        }
+        .form-section {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            color: #333;
+        }
+        .form-section h2 {
+            color: #007bff; /* Color de texto primario */
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .messages {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #000000cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mi Proyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca_de.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="text-uppercase">Contáctanos</h1>
+            <p>Estamos aquí para responder cualquier duda o consulta que tengas.</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-section">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Mapa de ubicación -->
+            <div class="col-md-6">
+                <h2 class="text-center text-white">Nuestra Ubicación</h2>
+                <div class="embed-responsive embed-responsive-16by9 mb-5">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12667.343870670655!2d-74.05485768184488!3d4.710988299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99b5ffcd5f4d%3A0x8cf4048ad5c6e733!2sBogotá%2C%20Colombia!5e0!3m2!1ses!2sco!4v1601660997893!5m2!1ses!2sco" 
+                        width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensajes Enviados -->
+    <section class="container messages" id="messages" style="display: none;">
+        <h2 class="text-center">Mensajes Enviados</h2>
+        <div id="messageList"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Mi Proyecto. Todos los derechos reservados.</p>
+            <p>Desarrollado por [Anggy Ospina]</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Captura los datos del formulario
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Obtiene la fecha actual
+            const fechaEnvio = new Date().toLocaleString();
+
+            // Crea un nuevo elemento para mostrar el mensaje
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'mb-3';
+            messageDiv.innerHTML = `<strong>Nombre:</strong> ${nombre}<br>
+                                    <strong>Email:</strong> ${email}<br>
+                                    <strong>Mensaje:</strong> ${mensaje}<br>
+                                    <strong>Fecha de Envío:</strong> ${fechaEnvio}`;
+
+            // Agrega el mensaje a la lista
+            const messageList = document.getElementById('messageList');
+            messageList.appendChild(messageDiv);
+
+            // Muestra la sección de mensajes
+            document.getElementById('messages').style.display = 'block';
+
+            // Limpia el formulario
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>

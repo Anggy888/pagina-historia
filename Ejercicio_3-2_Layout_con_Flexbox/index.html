@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Diario de Ana Frank</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/img/fon2.jfif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-family: 'Arial', sans-serif; /* Cambia la fuente */
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo más claro para mayor contraste */
+            padding: 20px;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
+        }
+        h1 {
+            color: #6c757d;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        }
+        nav a {
+            margin-left: 15px; /* Espaciado entre enlaces */
+        }
+        .card {
+            transition: transform 0.3s;
+            margin: 15px;
+            width: 18rem;
+            height: 100%;
+            border-radius: 10px; /* Bordes redondeados para las tarjetas */
+            overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para las tarjetas */
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 20px; /* Espaciado interno en el cuerpo de la tarjeta */
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            border-bottom: 2px solid #ccc; /* Línea en la parte inferior de la imagen */
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el pie de página */
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center">
+        <h1>El Diario de Ana Frank</h1>
+        <nav>
+            <a href="index.html" class="btn btn-outline-dark">Inicio</a>
+            <a href="sobre_el_diario.html" class="btn btn-outline-dark">Sobre el Diario</a>
+            <a href="ana_frank.html" class="btn btn-outline-dark">Ana Frank</a>
+            <a href="contacto.html" class="btn btn-outline-dark">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="/img/ana frank.jfif" class="card-img-top" alt="Ana Frank">
+                <div class="card-body">
+                    <h5 class="card-title">Ana Frank</h5>
+                    <p class="card-text">Ana Frank fue una joven judía que se convirtió en un símbolo de la resistencia durante el Holocausto.</p>
+                    <a href="https://www.annefrank.org/es/ana-frank/quien-era-ana-frank/?gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUCj01KDGYGosfCQnQBCEBjyTGszvJ1SLAjMyZfmJyzI53dAPHEPrSRoCZLgQAvD_BwE" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="/img/fon1.jfif" class="card-img-top" alt="El Diario de Ana Frank">
+                <div class="card-body">
+                    <h5 class="card-title">El Diario</h5>
+                    <p class="card-text">El diario de Ana Frank es un relato íntimo y poderoso que ofrece una visión única de la vida durante la ocupación nazi.</p>
+                    <a href="https://www.annefrank.org/es/ana-frank/el-diario/la-obra-de-ana-frank/" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="/img/historia ana.jfif" class="card-img-top" alt="Historia de Ana Frank">
+                <div class="card-body">
+                    <h5 class="card-title">Historia</h5>
+                    <p class="card-text">La historia de Ana Frank es un recordatorio del impacto del odio y la intolerancia en el mundo.</p>
+                    <a href="https://encyclopedia.ushmm.org/content/es/article/anne-frank-biography" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <img src="/img/legado de ana frank.jfif" class="card-img-top" alt="Legado">
+                <div class="card-body">
+                    <h5 class="card-title">Legado</h5>
+                    <p class="card-text">El legado de Ana Frank sigue vivo a través de su diario, que ha inspirado a millones de personas en todo el mundo.</p>
+                    <a href="https://www.nationalgeographic.es/historia/quien-fue-ana-frank-y-por-que-se-sigue-luchando-por-su-legado" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 El Diario de Ana Frank. Todos los derechos reservados.</p>
+        <p class="mb-0">Desarrollado por [Anggy Ospina]</p>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

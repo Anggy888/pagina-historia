@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de Historia</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/fonfo5.jfif'); /* Cambia esta URL por la imagen que desees */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido para las tarjetas */
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+        }
+        h1 {
+            color: #333; /* Color del texto del título */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el título */
+        }
+        .card {
+            transition: transform 0.3s; /* Transición suave para el hover */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el ratón sobre las tarjetas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Tarjetas de Historia</h1>
+
+        <div class="row">
+            <!-- Primera Tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="card border border-primary rounded">
+                    <img src="img/2.jfif" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 1: La Revolución Francesa</h5>
+                        <p class="card-text">La Revolución Francesa fue un periodo de cambios sociales y políticos en Francia que duró desde 1789 hasta 1799.</p>
+                        <a href="https://www.worldhistory.org/trans/es/1-19568/revolucion-francesa/" class="btn btn-primary">Consulta más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda Tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-top border-danger">
+                    <img src="img/3" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 2: La Segunda Guerra Mundial</h5>
+                        <p class="card-text">La Segunda Guerra Mundial fue un conflicto global que tuvo lugar entre 1939 y 1945, involucrando a la mayoría de las naciones del mundo.</p>
+                        <a href="https://historia.nationalgeographic.com.es/temas/segunda-guerra-mundial" class="btn btn-primary">Consulta más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercera Tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="card border border-success border-3">
+                    <img src="img/4.jfif" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 3: La Independencia de América</h5>
+                        <p class="card-text">Las independencias en América Latina fueron procesos históricos que llevaron a la emancipación de las colonias americanas del dominio español.</p>
+                        <a href="https://nuso.org/articulo/la-revolucion-francesa-y-la-independencia-de-america-latina/" class="btn btn-primary">Consulta más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuarta Tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="card border border-warning rounded-pill">
+                    <img src="img/5.jfif" class="card-img-top" alt="Imagen 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 4: La Guerra Fría</h5>
+                        <p class="card-text">La Guerra Fría fue un periodo de tensión política y militar entre los Estados Unidos y la Unión Soviética.</p>
+                        <a href="https://www.nationalgeographicla.com/historia/2022/11/que-fue-la-guerra-fria" class="btn btn-primary">Consulta más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

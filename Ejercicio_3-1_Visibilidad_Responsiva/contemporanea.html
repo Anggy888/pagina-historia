@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Contemporánea</title>
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/img/fondo.jfif'); /* Cambia esta ruta por la de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro translúcido */
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .card img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .card-text {
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Configura tarjetas del mismo tamaño */
+            gap: 20px; /* Separación entre las tarjetas */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Historia Contemporánea</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="antigua.html">Historia Antigua</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Historia Medieval</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="moderna.html">Historia Moderna</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2>Historia Contemporánea</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/img/2.5.jfif" alt="La Guerra Fría" class="img-fluid">
+                <h3 class="card-title">La Guerra Fría</h3>
+                <p class="card-text">La Guerra Fría (1947-1991) fue un conflicto ideológico y político entre los Estados Unidos y la Unión Soviética. Estuvo caracterizado por la carrera armamentista y la lucha por la influencia global.</p>
+                <a href="https://www.nationalgeographic.es/historia/que-fue-la-guerra-fria" class="btn btn-primary">Leer más</a>
+            </div>
+            <div class="card">
+                <img src="/img/2.6.jfif" alt="Globalización" class="img-fluid">
+                <h3 class="card-title">Globalización</h3>
+                <p class="card-text">La globalización ha acelerado la interconexión entre países, economías y culturas, pero ha generado desafíos como la desigualdad económica y la pérdida de culturas locales.</p>
+                <a href="https://concepto.de/globalizacion/" class="btn btn-primary">Leer más</a>
+            </div>
+            <div class="card">
+                <img src="/img/3.2.jfif" alt="Avances Tecnológicos" class="img-fluid">
+                <h3 class="card-title">Avances Tecnológicos</h3>
+                <p class="card-text">El auge de Internet y las tecnologías de la información han revolucionado la forma en que interactuamos y trabajamos. Sin embargo, también plantean preguntas sobre la privacidad y la ética.</p>
+                <a href="https://www.obicex.es/blog/aprende-con-obicex/los-avances-tecnologicos-mas-importantes" class="btn btn-primary">Leer más</a>
+            </div>
+            <div class="card">
+                <img src="/img/3.1.jfif" alt="Desafíos Contemporáneos" class="img-fluid">
+                <h3 class="card-title">Desafíos Contemporáneos</h3>
+                <p class="card-text">El mundo enfrenta desafíos complejos como el cambio climático, crisis migratorias y desigualdad social, que requieren colaboración global y soluciones innovadoras.</p>
+                <a href="https://ethic.es/2014/11/los-10-grandes-desafios-a-los-que-se-enfrenta-el-mundo/" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Historia del Mundo</p>
+        <p class="mb-0">Desarrollado por [Anggy Ospina]</p>
+
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

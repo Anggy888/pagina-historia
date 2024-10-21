@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1: Historia y Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img/fondo2.jfif'); /* Cambia esta URL por la imagen que desees */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Color blanco para resaltar el texto sobre el fondo */
+            font-family: 'Georgia', serif;
+        }
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para el texto del título */
+            font-size: 3rem;
+        }
+        p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para el texto del párrafo */
+            font-size: 1.2rem;
+        }
+        .content-wrapper {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido para mayor contraste */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para hacer que la caja resalte */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="content-wrapper">
+            <h1 class="text-center">Taller 1: Historia y Bootstrap</h1>
+
+            <!-- Primer párrafo: centrado y mayúsculas -->
+            <p class="text-center text-uppercase">La Revolución Francesa, que comenzó en 1789, fue un evento clave que transformó las estructuras políticas y sociales de Francia.</p>
+
+            <!-- Segundo párrafo: alineado a la derecha y negrita -->
+            <p class="text-end fw-bold">La caída de la Bastilla el 14 de julio de 1789 marcó el inicio de la Revolución, desencadenando una serie de reformas y conflictos.</p>
+
+            <!-- Tercer párrafo: justificado y subrayado -->
+            <p class="text-justify text-decoration-underline">Uno de los eventos más importantes fue la proclamación de la Declaración de los Derechos del Hombre y del Ciudadano, que estableció los principios de libertad e igualdad.</p>
+
+            <!-- Cuarto párrafo: alineado a la izquierda e itálica -->
+            <p class="text-start fst-italic">El período del Terror, liderado por Robespierre, fue una fase violenta que dejó miles de muertos antes de la caída del régimen jacobino en 1794.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

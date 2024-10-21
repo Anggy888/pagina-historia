@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2: Espaciado y Bordes</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img/fondo4.jfif'); /* Cambia esta URL por la imagen que desees */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+        .gallery-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+        }
+        img {
+            border-radius: 10px; /* Bordes redondeados para las imágenes */
+            transition: transform 0.3s; /* Transición suave para el hover */
+        }
+        img:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el ratón sobre las imágenes */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container gallery-container p-4">
+        <h1 class="text-center">Galería de Imágenes</h1>
+
+        <!-- Fila 1 de imágenes -->
+        <div class="row my-4">
+            <div class="col text-center">
+                <img src="https://placehold.co/400x480?text=Revolución\nIndustrial" class="m-3 mx-auto" alt="placeholder image 1">
+            </div>
+            <div class="col text-center">
+                <img src="https://placehold.co/400x400?text=Caída\ndel\nImperio Romano" class="m-3 mx-auto" alt="placeholder image 2">   
+            </div>
+            <div class="col text-center">
+                <img src="https://placehold.co/200x300/000000/FFF?text=Guerra+Fría&font=playfair display" class="m-3 mx-auto" alt="placeholder image 3"> 
+            </div>
+        </div>
+
+        <!-- Fila 2 de imágenes -->
+        <div class="row my-4">
+            <div class="col text-center">
+                <img src="https://placehold.co/400?text=Segunda+Guerra+Mundial&font=lora" class="m-3 mx-auto" alt="placeholder image 4">  
+            </div>
+            <div class="col text-center">
+                <img src="https://placehold.co/490?text=Independencia+de+América+Latina&font=pt sans" class="m-3 mx-auto" alt="placeholder image 5">   
+            </div>
+            <div class="col text-center">
+                <img src="https://placehold.co/300/orange/white?text=Revolución+Francesa&font=oswald" class="m-3 mx-auto" alt="placeholder image 6"> 
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
